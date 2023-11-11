@@ -1,0 +1,166 @@
+.wrapper-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    background-color: #121212;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: fit-content;
+}
+
+.follow {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 70%;
+    padding-top: 3rem;
+
+    .title {
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 0!important;
+        font-family: "Biondi Sans W00 Light";
+    }
+}
+
+.logos {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+
+    .social-media {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        margin-bottom: 1rem;
+
+        .icons {
+            color: #fff;
+        }
+    }
+
+    .tripadvisor {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        color: #fff;
+    }
+}
+
+.subscribe-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 2rem 0;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 0!important;
+    font-family: "Biondi Sans W00 Light";
+}
+
+.email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 5rem;
+    
+    .email-input {
+        display: flex;
+        justify-content: center;
+        width: 70%;
+        height: fit-content;
+        border: 1px solid #D5BC7C;
+        padding-left: 0.5rem;
+        padding-bottom: 0.2rem;
+        outline: 0;
+        background-color: #D5BC7C;
+        border-radius: 5px;
+
+        &::placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            font-weight: 0!important;
+            font-family: "Biondi Sans W00 Light";
+        }
+    }
+}
+
+.vise {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5rem;
+
+    .title {
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 0!important;
+        font-family: "Biondi Sans W00 Light";
+    }
+}
+
+.bottom {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 4rem;
+    color: #919191;
+    font-size: 0.6rem;
+    font-weight: 0!important;
+    font-family: "Biondi Sans W00 Light";
+    background-color: #262526;
+}
+
+.svg {
+    position: absolute;
+    left: 50%;
+    width: fit-content;
+    margin-bottom: 1rem;
+    margin-left: -80px;
+    z-index: 100;
+}
+
+.down-arrow {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 80%;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    z-index: 100;
+
+    .arrow {
+        width: 0.6rem;
+        height: 0.6rem;
+        opacity: 1;
+        transform: rotate(225deg);
+        border-right: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        z-index: 100;
+    }
+}

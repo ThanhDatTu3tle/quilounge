@@ -1,0 +1,17 @@
+.static {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+    height: fit-content;
+    z-index: 999;
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 62%;
+    }
+}
