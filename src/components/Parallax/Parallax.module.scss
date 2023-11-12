@@ -1,6 +1,7 @@
 .wrapper {
     height: 70vh;
     transform-style: preserve-3d;
+    perspective: 2px;
     color: white;
     display: flex;
     align-items: center;

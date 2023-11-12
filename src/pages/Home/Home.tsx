@@ -1,12 +1,11 @@
-import classNames from "classnames/bind";
+import classNames from 'classnames/bind';
 
-import styles from "./Home.module.scss";
+import styles from './Home.module.scss';
 import '../../assets/biondisansrg-regular.otf';
 
-import Parallax from "../../components/Parallax";
-import ParallaxStatic from "../../components/ParallaxStatic";
-import Image from "../../components/Image";
-import Header from "../../layouts/MainUserLayout/components/Header";
+import Parallax from '../../components/Parallax';
+import ParallaxStatic from '../../components/ParallaxStatic';
+import Image from '../../components/Image';
 
 const cx = classNames.bind(styles);
 
@@ -14,7 +13,6 @@ export default function Home() {
 
   return (
     <>
-      <Header />
       <div className={cx('parallax-main')}>
         <div className={cx('image')} style={{ backgroundImage:"url(https://quilounge.com/hochiminh/assets/uploads/2016/07/2b7a2602-copy-2048x1365.jpg)" }}>
         </div>

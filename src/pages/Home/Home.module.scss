@@ -16,8 +16,10 @@ iframe {
     justify-content: space-between;
     height: 98vh;
     transform-style: preserve-3d;
+    perspective: 2px;
     color: white;
     z-index: 99;
+    overflow-y: hidden;
 
     .image {
         position: absolute;
