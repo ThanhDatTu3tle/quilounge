@@ -18,7 +18,7 @@ export default function Header() {
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
     const screenHeight = window.innerHeight;
-    const triggerPoint = (3 / 4) * screenHeight;
+    const triggerPoint = (5 / 6) * screenHeight;
 
     if (scrollPosition > triggerPoint) {
       setScrolled(true);

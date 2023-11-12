@@ -26,6 +26,9 @@ body {
     line-height: 1.7;
     width: 100%;
     min-height: 100vh;
-    overflow: hidden;
     background-image: url('http://quilounge.com/assets/uploads/2016/04/file-texture-qui-con-rua2.jpg') !important;
+}
+
+::-webkit-scrollbar {
+    width: 0rem;
 }
