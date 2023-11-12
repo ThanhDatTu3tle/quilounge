@@ -22,3 +22,30 @@
         font-size: 3rem;
     }
 }
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70vh;
+        transform-style: preserve-3d;
+        color: white;
+        z-index: 99;
+    
+        .image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform: translateZ(-1px) scale(1.5);
+            z-index: -1;
+            background-size: cover;
+            background-position: center;
+        }
+    
+        .content {
+            font-family: "Biondi Sans W00 Light";
+            font-size: 2.8rem;
+        }
+    }
+}
