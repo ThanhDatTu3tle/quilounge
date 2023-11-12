@@ -3,9 +3,9 @@ import classNames from "classnames/bind";
 import styles from "./Parallax.module.scss";
 
 interface Props {
-    url?: React.ReactNode;
-    content?: React.ReactNode;
-  }
+  url?: React.ReactNode;
+  content?: React.ReactNode;
+}
 
 const cx = classNames.bind(styles);
 

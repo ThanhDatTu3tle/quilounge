@@ -1,7 +1,6 @@
 iframe {
     width: 100%;
     height: 100%;
-    overflow: clip !important;
     border-width: 2px;
     border-style: inset;
     border-color: initial;
@@ -137,6 +136,15 @@ iframe {
             justify-content: space-between;
             width: 50%;
         }
+
+        .images > :first-child {
+            padding-right: 1.4rem;
+            padding-left: 1rem;
+        }
+
+        .images > :last-child {
+            padding-left: 1.4rem;
+        }
     }
 
     .bottom {
@@ -145,6 +153,21 @@ iframe {
         align-items: flex-end;
         width: 100%;
         margin-top: 2rem;
+    }
+
+    .bottom > :first-child {
+        padding-right: 1.1rem;
+        width: 20%;
+    }
+
+    .bottom > :nth-child(2) {
+        padding-right: 1.1rem;
+        width: 28%;
+    }
+
+    .bottom > :last-child {
+        padding-right: 1.1rem;
+        width: 26%;
     }
 }
 
@@ -248,6 +271,14 @@ iframe {
             height: 100%;
         }
 
+        .right > :first-child {
+            padding-right: 1.4rem;
+        }
+
+        .right > :last-child {
+            padding-left: 1.4rem;
+        }
+
         .left {
             display: flex;
             flex-direction: column;
@@ -321,6 +352,14 @@ iframe {
             height: 100%;
         }
 
+        .left > :first-child {
+            padding-right: 1.4rem;
+        }
+
+        .left > :last-child {
+            padding-left: 1.4rem;
+        }
+
         .right {
             display: flex;
             flex-direction: column;
@@ -373,6 +412,824 @@ iframe {
                 border: 0;
                 border-bottom: 2px solid #c59d5f;
                 cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1025px) {
+    .parallax-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 98vh;
+        transform-style: preserve-3d;
+        color: white;
+        z-index: 99;
+    
+        .image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform: translateZ(-1px) scale(1.5);
+            z-index: -1;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+    
+    .logo {
+        position: absolute;
+        top: 40%;
+        width: 8.2%;
+    }
+    
+    .svg {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        width: fit-content;
+        margin-left: -80px;
+        margin-top: -50px;
+        z-index: 10;
+    }
+    
+    .down-arrow {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 95%;
+        width: 44px;
+        height: 44px;
+        opacity: 0.7;
+        cursor: pointer;
+        z-index: 100;
+    
+        .arrow {
+            width: 16px;
+            height: 16px;
+            opacity: 1;
+            transform: rotate(45deg);
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+            z-index: 100;
+        }
+    }
+    
+    .about-us {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        padding: 5rem 0;
+    
+        .top {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 100%;
+    
+            .description {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 50%;
+    
+                .title {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 30px;
+                    padding: 1rem 0 1rem 0;
+                    font-family: "Biondi Sans W00 Regular";
+                    color: #fff;
+                    position: relative;
+                    z-index: 1;
+                    background: linear-gradient(to right, #DBC17B 0%,#A37432 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+    
+                .content {
+                    width: 90%;
+                    font-weight: 0!important;
+                    text-align: center;
+                    margin-bottom: 1.5rem;
+                    color: #ffffff;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-family: "Biondi Sans W00 Light";
+                    font-size: 0.7rem;
+                }
+    
+                .iframe-youtube {
+                    width: 90%;
+                    height: 230px;
+                    margin-bottom: 1.2rem;
+                }
+    
+                .qui-icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 90%;
+                }
+            }
+    
+            .images {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: space-between;
+                width: 50%;
+            }
+        }
+    
+        .bottom {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            width: 100%;
+            margin-top: 2rem;
+        }
+    }
+    
+    .atmosphere {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: fit-content;
+        padding: 5rem 0;
+    
+        .left {
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            justify-content: space-between;
+            gap: 1.2rem;
+            width: 47%;
+            height: 100%;
+        }
+    
+        .right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            width: 47%;
+    
+            .title {
+                width: 100%;
+                text-align: center;
+                font-size: 1.7rem;
+                padding: 0.5rem 0 1rem 0;
+                font-family: "Biondi Sans W00 Regular";
+                color: #fff;
+                position: relative;
+                z-index: 1;
+                background: linear-gradient(to right, #DBC17B 0%,#A37432 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+    
+            .content {
+                width: 93%;
+                font-weight: 0!important;
+                text-align: center;
+                margin-bottom: 0.5rem;
+                color: #ffffff;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-family: "Biondi Sans W00 Light";
+                font-size: 0.7rem;
+            }
+            
+            .gallery {
+                width: fit-content;
+                height: fit-content;
+                text-align: center;
+                font-size: 0.8rem;
+                padding: 1rem 0 0.2rem 0;
+                margin-bottom: 1rem;
+                font-family: "Biondi Sans W00 Light";
+                position: relative;
+                z-index: 1;
+                border-radius: 0;
+                line-height: 1;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                background: linear-gradient(to right, #DBC17B 0%,#A37432 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                border: 0;
+                border-bottom: 2px solid #c59d5f;
+                cursor: pointer;
+            }
+        }
+    }
+    
+    .cuisine-mixology {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        padding: 5rem 0;
+    
+        .top {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            margin-bottom: 3rem;
+    
+            .right {
+                display: flex;
+                flex-wrap: nowrap;
+                flex-grow: 1;
+                flex-basis: 25%;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                width: 48%;
+                height: 100%;
+            }
+    
+            .left {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                width: 52%;
+        
+                .title {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 30px;
+                    padding: 20px 0 20px 0;
+                    font-family: "Biondi Sans W00 Regular";
+                    color: #fff;
+                    position: relative;
+                    z-index: 1;
+                    background: linear-gradient(to right, #DBC17B 0%,#A37432 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+        
+                .content {
+                    width: 80%;
+                    text-align: center;
+                    margin-bottom: 24px;
+                    color: #ffffff;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-family: "Biondi Sans W00 Light";
+                    font-size: 11.5px;
+                }
+                
+                .food-menu {
+                    width: fit-content;
+                    height: fit-content;
+                    text-align: center;
+                    font-size: 0.8rem;
+                    padding: 1rem 0 0.2rem 0;
+                    margin-bottom: 1rem;
+                    font-family: "Biondi Sans W00 Light";
+                    position: relative;
+                    z-index: 1;
+                    border-radius: 0;
+                    line-height: 1;
+                    text-transform: uppercase;
+                    letter-spacing: 0.1em;
+                    background: linear-gradient(to right, #DBC17B 0%,#A37432 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    border: 0;
+                    border-bottom: 2px solid #c59d5f;
+                    cursor: pointer;
+                }
+            }
+        }
+    
+        .bottom {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+    
+            .left {
+                display: flex;
+                flex-wrap: nowrap;
+                flex-grow: 1;
+                flex-basis: 25%;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                width: 48%;
+                height: 100%;
+            }
+    
+            .right {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                width: 52%;
+        
+                .title {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 30px;
+                    padding: 20px 0 20px 0;
+                    font-family: "Biondi Sans W00 Regular";
+                    color: #fff;
+                    position: relative;
+                    z-index: 1;
+                    background: linear-gradient(to right, #DBC17B 0%,#A37432 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+        
+                .content {
+                    width: 80%;
+                    text-align: center;
+                    margin-bottom: 24px;
+                    color: #ffffff;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-family: "Biondi Sans W00 Light";
+                    font-size: 11.5px;
+                }
+                
+                .drink-menu {
+                    width: fit-content;
+                    height: fit-content;
+                    text-align: center;
+                    font-size: 0.8rem;
+                    padding: 1rem 0 0.2rem 0;
+                    margin-bottom: 1rem;
+                    font-family: "Biondi Sans W00 Light";
+                    position: relative;
+                    z-index: 1;
+                    border-radius: 0;
+                    line-height: 1;
+                    text-transform: uppercase;
+                    letter-spacing: 0.1em;
+                    background: linear-gradient(to right, #DBC17B 0%,#A37432 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    border: 0;
+                    border-bottom: 2px solid #c59d5f;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .logo {
+        position: absolute;
+        top: 33%;
+        width: 15%;
+    }
+    
+    .svg {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        width: fit-content;
+        margin-left: -80px;
+        margin-top: -50px;
+        z-index: 10;
+    }
+
+    .down-arrow {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 92%;
+        width: 44px;
+        height: 44px;
+        opacity: 0.7;
+        cursor: pointer;
+        z-index: 100;
+    
+        .arrow {
+            width: 16px;
+            height: 16px;
+            opacity: 1;
+            transform: rotate(45deg);
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+            z-index: 100;
+        }
+    }
+
+    .atmosphere {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: fit-content;
+        padding: 5rem 0;
+    
+        .left {
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            justify-content: space-between;
+            gap: 1.2rem;
+            width: 52%;
+            height: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    .logo {
+        position: absolute;
+        top: 40%;
+        width: 20%;
+    }
+    
+    .svg {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        width: fit-content;
+        margin-left: -80px;
+        margin-top: -50px;
+        z-index: 10;
+    }
+
+    .down-arrow {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 95%;
+        width: 44px;
+        height: 44px;
+        opacity: 0.7;
+        cursor: pointer;
+        z-index: 100;
+    
+        .arrow {
+            width: 16px;
+            height: 16px;
+            opacity: 1;
+            transform: rotate(45deg);
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+            z-index: 100;
+        }
+    }
+
+    .about-us {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        padding: 5rem 0;
+    
+        .top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+
+            .description {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+    
+                .title {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 30px;
+                    padding: 1rem 0 1rem 0;
+                    font-family: "Biondi Sans W00 Regular";
+                    color: #fff;
+                    position: relative;
+                    z-index: 1;
+                    background: linear-gradient(to right, #DBC17B 0%,#A37432 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+    
+                .content {
+                    width: 90%;
+                    font-weight: 0!important;
+                    text-align: center;
+                    margin-bottom: 1.5rem;
+                    color: #ffffff;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-family: "Biondi Sans W00 Light";
+                    font-size: 0.7rem;
+                }
+    
+                .iframe-youtube {
+                    width: 90%;
+                    height: 230px;
+                    margin-bottom: 1.2rem;
+                }
+    
+                .qui-icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 90%;
+                    margin-bottom: 1rem;
+                }
+            }
+    
+            .images {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 80%;
+            }
+
+            .images > :first-child {
+                padding: 0;
+                margin-bottom: 2rem;
+            }
+    
+            .images > :last-child {
+                padding: 0;
+            }
+        }
+
+        .bottom {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-top: 2rem;
+        }
+    }
+
+    .atmosphere {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: fit-content;
+        padding: 5rem 0;
+    
+        .left {
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            justify-content: space-between;
+            gap: 1.2rem;
+            width: 100%;
+            height: 100%;
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+    .logo {
+        position: absolute;
+        top: 40%;
+        width: 40%;
+    }
+    
+    .svg {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        width: fit-content;
+        margin-left: -80px;
+        margin-top: -50px;
+        z-index: 10;
+    }
+
+    .down-arrow {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 95%;
+        width: 44px;
+        height: 44px;
+        opacity: 0.7;
+        cursor: pointer;
+        z-index: 100;
+    
+        .arrow {
+            width: 16px;
+            height: 16px;
+            opacity: 1;
+            transform: rotate(45deg);
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+            z-index: 100;
+        }
+    }
+
+    .about-us {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        padding: 5rem 0;
+    
+        .top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+
+            .description {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+    
+                .title {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 30px;
+                    padding: 1rem 0 1rem 0;
+                    font-family: "Biondi Sans W00 Regular";
+                    color: #fff;
+                    position: relative;
+                    z-index: 1;
+                    background: linear-gradient(to right, #DBC17B 0%,#A37432 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+    
+                .content {
+                    width: 100%;
+                    font-weight: 0!important;
+                    text-align: center;
+                    margin-bottom: 1.5rem;
+                    color: #ffffff;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-family: "Biondi Sans W00 Light";
+                    font-size: 0.7rem;
+                }
+    
+                .iframe-youtube {
+                    width: 100%;
+                    height: 230px;
+                    margin-bottom: 1.2rem;
+                }
+    
+                .qui-icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    margin-bottom: 1rem;
+                }
+            }
+    
+            .images {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+            }
+
+            .images > :first-child {
+                padding: 0;
+                margin-bottom: 2rem;
+            }
+    
+            .images > :last-child {
+                padding: 0;
+            }
+        }
+
+        .bottom {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            width: 100%;
+            margin-top: 2rem;
+        }
+    }
+
+    .atmosphere {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: fit-content;
+        padding: 5rem 0;
+    
+        .left {
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            justify-content: space-between;
+            gap: 0.5rem;
+            width: 100%;
+            height: 100%;
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+
+    .cuisine-mixology {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        padding: 5rem 0;
+    
+        .top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 3rem;
+    
+            .right {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+            }
+
+            .right > * {
+                width: 100%;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                padding: 0 !important;
+            }
+    
+            .left {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+            }
+        }
+
+        .bottom {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+    
+            .left {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+            }
+    
+            .left > * {
+                width: 100%;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                padding: 0 !important;
+            }
+    
+            .right {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
             }
         }
     }

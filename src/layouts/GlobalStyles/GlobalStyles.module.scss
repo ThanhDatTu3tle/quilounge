@@ -29,6 +29,23 @@ body {
     background-image: url('http://quilounge.com/assets/uploads/2016/04/file-texture-qui-con-rua2.jpg') !important;
 }
 
-::-webkit-scrollbar {
-    width: 0rem;
+::-webkit-scrollbar-horizontal {
+    display: none;
+    width: 0;
 }
+
+// ::-webkit-scrollbar {
+//     width: 0rem;
+// }
+
+// ::-webkit-scrollbar-track {
+//     background: #f1f1f1;
+// }
+
+// ::-webkit-scrollbar-thumb {
+//     background: #888;
+// }
+
+// ::-webkit-scrollbar-thumb:hover {
+//     background: #555;
+// }

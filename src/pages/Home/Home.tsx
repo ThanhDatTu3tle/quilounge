@@ -14,8 +14,7 @@ export default function Home() {
   return (
     <>
       <div className={cx('parallax-main')}>
-        <div className={cx('image')} style={{ backgroundImage:"url(https://quilounge.com/hochiminh/assets/uploads/2016/07/2b7a2602-copy-2048x1365.jpg)" }}>
-        </div>
+        <div className={cx('image')} style={{ backgroundImage:"url(https://quilounge.com/hochiminh/assets/uploads/2016/07/2b7a2602-copy-2048x1365.jpg)" }}></div>
         <img className={cx('logo')} src="https://quilounge.com/assets/uploads/2016/11/logo-01-copy-min-e1479186963103.png" />
         <svg className={cx('svg')}>
           <path fill='#fff' d='M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z'></path>
@@ -44,28 +43,23 @@ export default function Home() {
             </div>
             <div className={cx("images")}>
               <Image
-                style={{ paddingRight: '1.4rem', paddingLeft: '1rem' }}
                 src={"https://quilounge.com/hochiminh/assets/uploads/2016/11/homepage_3-min-min.jpg"}
               />
               <Image
-                style={{ paddingLeft: '1.4rem' }}
                 src={"https://quilounge.com/hochiminh/assets/uploads/2016/03/wagyu-tomahawk-with-condiments-683x1024.jpg"}
               />
             </div>
           </div>
           <div className={cx('bottom')}>
-              <Image
-                style={{ paddingRight: '1.1rem', width: '20%' }}
-                src={"https://quilounge.com/hochiminh/assets/uploads/2014/05/43737395_2128159974112756_1418629329956372480_n-208x300.png"}
-              />
-              <Image
-                style={{ paddingRight: '1.1rem', width: '28%' }}
-                src={"https://quilounge.com/hochiminh/assets/uploads/2014/05/43639013_172105297034646_5077346072011997184_n-300x225.png"}
-              />
-              <Image
-                style={{ paddingRight: '1.1rem', width: '26%' }}
-                src={"https://quilounge.com/hochiminh/assets/uploads/2019/02/rb-award-vietcetera-300x205.png"}
-              />
+            <Image
+              src={"https://quilounge.com/hochiminh/assets/uploads/2014/05/43737395_2128159974112756_1418629329956372480_n-208x300.png"}
+            />
+            <Image
+              src={"https://quilounge.com/hochiminh/assets/uploads/2014/05/43639013_172105297034646_5077346072011997184_n-300x225.png"}
+            />
+            <Image
+              src={"https://quilounge.com/hochiminh/assets/uploads/2019/02/rb-award-vietcetera-300x205.png"}
+            />
           </div>
         </div>
       </ParallaxStatic>
@@ -127,24 +121,20 @@ export default function Home() {
                 </div>
                 <div className={cx('right')}>
                     <Image
-                        style={{ paddingRight: '1.4rem' }}
-                        src={"https://quilounge.com/hochiminh/assets/uploads/2016/11/homepage_10-1-min2-3-min.jpg"}
+                      src={"https://quilounge.com/hochiminh/assets/uploads/2016/11/homepage_10-1-min2-3-min.jpg"}
                     />
                     <Image
-                        style={{ paddingLeft: '1.4rem' }}
-                        src={"https://quilounge.com/hochiminh/assets/uploads/2016/11/homepage_11-min-min.jpg"}
+                      src={"https://quilounge.com/hochiminh/assets/uploads/2016/11/homepage_11-min-min.jpg"}
                     />
                 </div>
             </div>
             <div className={cx('bottom')}>
                 <div className={cx('left')}>
                     <Image
-                        style={{ paddingRight: '1.4rem' }}
-                        src={"https://quilounge.com/hochiminh/assets/uploads/2016/11/homepage_12-min1-min.jpg"}
+                      src={"https://quilounge.com/hochiminh/assets/uploads/2016/11/homepage_12-min1-min.jpg"}
                     />
                     <Image
-                        style={{ paddingLeft: '1.4rem' }}
-                        src={"https://quilounge.com/hochiminh/assets/uploads/2016/11/homepage_10-min-min.jpg"}
+                      src={"https://quilounge.com/hochiminh/assets/uploads/2016/11/homepage_10-min-min.jpg"}
                     />
                 </div>
                 <div className={cx('right')}>
