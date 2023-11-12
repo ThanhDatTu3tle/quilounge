@@ -13,9 +13,9 @@ const cx = classNames.bind(styles);
 
 export default function MainUserLayout({ children }: Props) {
   return (
-    <div className={cx("wrapper")}>
+    <div className={cx('wrapper')}>
       <Header />
-      <div style={{ overflowX: 'hidden' }}>{children}</div>
+      <div className={cx('page')}>{children}</div>
       <Footer />
     </div>
   );

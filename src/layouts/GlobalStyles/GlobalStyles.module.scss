@@ -20,10 +20,12 @@ html {
 }
 
 body {
+    margin: 0;
+    padding: 0;
     font-size: 1.6rem;
     line-height: 1.7;
     width: 100%;
     min-height: 100vh;
-    overflow-y: auto;
+    overflow: hidden;
     background-image: url('http://quilounge.com/assets/uploads/2016/04/file-texture-qui-con-rua2.jpg') !important;
 }

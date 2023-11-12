@@ -1,24 +1,34 @@
 .wrapper {
-    height: 70vh;
-    transform-style: preserve-3d;
-    perspective: 2px;
-    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    height: 70vh;
+    transform-style: preserve-3d;
+    color: white;
+    // position: relative;
+    z-index: 99;
+
+    .image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform: translateZ(-1px) scale(1.5);
+        z-index: -1;
+        background-size: cover;
+        background-position: center;
+    }
 }
 
-.wrapper>.image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transform: translateZ(-1px) scale(1.5);
-    z-index: -1;
-    background-size: cover;
-    background-position: center;
-    overflow-y: hidden;
-}
+// .wrapper>.image {
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     transform: translateZ(-1px) scale(1.5);
+//     z-index: -1;
+//     background-size: cover;
+//     background-position: center;
+//     overflow-y: hidden;
+// }
 
 .content {
     font-family: "Biondi Sans W00 Light";
