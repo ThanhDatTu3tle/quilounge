@@ -12,13 +12,7 @@ const cx = classNames.bind(styles);
 export default function Parallax({ url, content }: Props) {
   return (
     <div className={cx("wrapper")}>
-      <div
-        className={cx("image")}
-        style={{
-          backgroundImage:
-            `url(${url})`,
-        }}
-      ></div>
+      <div className={cx("image")} style={{ backgroundImage:`url(${url})` }}></div>
       <div className={cx("content")}>
         {content}
       </div>
