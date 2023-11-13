@@ -1,5 +1,8 @@
 import classNames from 'classnames/bind';
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+
 import styles from './Home.module.scss';
 import '../../assets/biondisansrg-regular.otf';
 
@@ -20,7 +23,7 @@ export default function Home() {
           <path fill='#fff' d='M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z'></path>
         </svg>
         <div className={cx('down-arrow')}>
-          <div className={cx('arrow')}></div>
+          <FontAwesomeIcon icon={faChevronDown} style={{ color: "#4C4C4C" }} />  
         </div>
       </div>
       <ParallaxStatic>
