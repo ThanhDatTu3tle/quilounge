@@ -185,8 +185,13 @@ iframe {
         position: relative;
         justify-content: space-between;
         gap: 1.2rem;
-        width: 47%;
+        width: 55%;
         height: 100%;
+    }
+
+    .left > * {
+        width: 48%;
+        height: 48%;
     }
 
     .right {

@@ -68,19 +68,15 @@ export default function Home() {
         <div className={cx('atmosphere')}>
           <div className={cx('left')}>
             <Image
-              style={{ width: '48%', height: '48%' }}
               src={"https://quilounge.com/hochiminh/assets/uploads/2014/06/homepage_5-min-300x222.jpg"}
             />
             <Image
-              style={{ width: '48%', height: '48%' }}
               src={"https://quilounge.com/hochiminh/assets/uploads/2014/06/homepage_6-min-300x222.jpg"}
             />
             <Image
-              style={{ width: '48%', height: '48%' }}
               src={"https://quilounge.com/hochiminh/assets/uploads/2014/06/homepage_7-min-300x222.jpg"}
             />
             <Image
-              style={{ width: '48%', height: '48%' }}
               src={"https://quilounge.com/hochiminh/assets/uploads/2014/06/homepage_8-min-300x222.jpg"}
             />
           </div>
