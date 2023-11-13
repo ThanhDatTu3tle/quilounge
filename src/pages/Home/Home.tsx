@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <div className={cx('parallax-main')}>
-        <div className={cx('image')} style={{ backgroundImage:"url(https://quilounge.com/hochiminh/assets/uploads/2016/07/2b7a2602-copy-2048x1365.jpg)" }}></div>
+        <div className={cx('image')}></div>
         <img className={cx('logo')} src="https://quilounge.com/assets/uploads/2016/11/logo-01-copy-min-e1479186963103.png" />
         <svg className={cx('svg')}>
           <path fill='#fff' d='M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z'></path>
